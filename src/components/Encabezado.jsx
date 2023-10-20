@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ListaCoaches from './ListaCoaches'
 import RegistrarCoach from './RegistrarCoach'
+import ActualizarCoach from './ActualizarCoach'
 
 export default function Encabezado() {
     return (
@@ -28,11 +29,11 @@ export default function Encabezado() {
             <Routes>
                 <Route path='/' element={<ListaCoaches />}/>
                 <Route path='/registrar' element={<RegistrarCoach />} />
+                <Route path='/actualizar/:id_coach' element={<ActualizarCoach />} />
             </Routes>
         </BrowserRouter>
     )
 }
-
 
 
 
